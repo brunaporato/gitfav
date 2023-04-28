@@ -61,6 +61,18 @@ export class FavoritesView extends Favorites {
 
     this.update()
     this.onadd()
+    console.log(this.entries)
+    this.emptyTable()
+  }
+
+  emptyTable() {
+    const emptyTbody = this.root.querySelector('.tbody-empty')
+
+    if(this.entries.length == 0) {
+      emptyTbody.classList.remove('hide')
+    } else {
+      emptyTbody.classList.add('hide')
+    }
   }
 
   onadd() {
@@ -105,6 +117,9 @@ export class FavoritesView extends Favorites {
 
       this.tbody.append(tr)
     })
+
+    this.emptyTable()
+
   }
 
   createTr() {
