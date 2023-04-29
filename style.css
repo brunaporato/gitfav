@@ -157,6 +157,10 @@ table tbody td {
   text-align: left;
 }
 
+table tbody td {
+  border-bottom: 1px solid #4A808C;
+}
+
 .user img {
   width: 5.6rem;
   height: 5.6rem;
