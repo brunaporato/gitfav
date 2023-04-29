@@ -59,7 +59,7 @@ header {
   width: 30rem;
 
   font-weight: 400;
-  color: var(--font-color-secondary)
+  color: var(--font-color-secondary);
 }
 
 .search button {
@@ -92,13 +92,33 @@ header {
   padding: 0 16rem;
 }
 
+.wrapper-table {
+  margin-top: min(8.7rem, 10vw);
+  max-height: 60rem;
+  overflow-y: overlay;
+  border-radius: 1.2rem;
+  border: 1px solid #4A808C;
+}
+
+
+.wrapper-table::-webkit-scrollbar {
+  width: 6px;
+}
+
+.wrapper-table::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0.3rem;
+  margin-block-start: 6rem;
+}
+
+.wrapper-table::-webkit-scrollbar-thumb {
+  background: #4A808C;
+  border-radius: 10px;
+}
+
 table {
   width: 100%;
   border-spacing: 0;
-  overflow: hidden;
-  margin-top: min(8.7rem, 10vw);
-  border-radius: 1.2rem;
-  border: 1px solid #4A808C;
 }
 
 table * {
@@ -113,6 +133,7 @@ table th {
   font-size: 2rem;
   text-align: left;
   position: sticky;
+  top: 0;
 }
 
 table th:first-child {
@@ -123,7 +144,7 @@ table th:last-child {
   border-top-right-radius: 1.2rem;
 }
 
-table tr {
+table tr:nth-child(odd) {
   background: rgba(6, 22, 27, 0.5);
 }
 
