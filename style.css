@@ -100,20 +100,19 @@ header {
   border: 1px solid #4A808C;
 }
 
-
 .wrapper-table::-webkit-scrollbar {
-  width: 6px;
+  width: 2.1rem;
 }
 
 .wrapper-table::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 0.3rem;
   margin-block-start: 6rem;
 }
 
 .wrapper-table::-webkit-scrollbar-thumb {
-  background: #4A808C;
-  border-radius: 10px;
+  box-shadow: inset 0 0 1rem 1rem #4a808c;
+  border: solid 7px transparent;
+  border-radius: 2rem;
+  background-clip: padding-box;
 }
 
 table {
